@@ -1,0 +1,16 @@
+{
+    "content": {
+        "globals": {
+            "logo": "/assets/logo/logo-final.png"
+        },
+        "frontpage": [
+            "/assets/front-desktop/front-what-we-do.png",
+            "/assets/front-desktop/front-maintainable.png",
+            "/assets/front-desktop/front-get-in-touch.png"
+        ],
+        "text": 
+            {
+                "moretocome": "And yet... more to come"
+            }
+    }
+}
