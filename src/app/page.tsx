@@ -1,6 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-
-'use client'
 import styles from './page.module.scss'
 import data from "../../public/assets/data.json"
 import Link from 'next/link';
@@ -10,11 +8,7 @@ export default function Home() {
 
   const frontpage = data.content.frontpage
 
-  function test() {
-    <Link href="/WhatWeDo"></Link>
-    console.log('test');
-    
-  }
+
 
   return (
     <main id={styles.mainContainer}>
@@ -23,14 +17,16 @@ export default function Home() {
 
       <div id={styles.navigationContainer}>
 
-        {frontpage &&
+        {
 
           data.content.frontpage.map((element: any, index: number) => (
 
             <div id={styles.navigationImg} key={index}>
 
-              <img id={styles.pointer} src={data.content.frontpage[index - 1]} alt="">
-              </img>
+              <Link href={data.content.href[index]}>
+
+                <img id={styles.pointer} src={data.content.frontpage[index - 1]} alt="" />
+              </Link>
 
             </div>
 
@@ -39,7 +35,10 @@ export default function Home() {
 
         <div id={styles.test}>
 
-          <img id={styles.pointer} onClick={test} src={data.content.frontpage[2]} alt="" />
+          <Link href={data.content.href[3]}>
+            <img id={styles.pointer} src={data.content.frontpage[2]} alt="" />
+          </Link>
+
 
           <h3 id={styles.imgText}>
 

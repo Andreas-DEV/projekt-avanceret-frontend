@@ -1,0 +1,72 @@
+#mainContainer {
+
+
+    #headerContainer {
+
+        display: flex;
+        padding-inline: 1rem;
+        justify-content: space-between;
+        margin-top: 2rem;
+
+        #menuContainer {
+
+            display: flex;
+
+            #navContainer {
+                position: relative;
+
+                #absolute {
+                    position: absolute;
+                    top: -15px;
+                    right: 1.5px;
+                }
+            }
+        }
+    }
+
+
+    #sectionContainer {
+
+
+        #sectionHero {
+            padding: 1rem;
+            width: 100%;
+            height: 100%;
+        }
+
+        #sectionTitle {
+            letter-spacing: -1px;
+            font-size: clamp(1rem, -0.193rem + 6.6977vw, 1.9rem);
+            padding-inline: 1rem;
+        }
+
+        #sectionTitleSpan {
+            color: #BF7B3F;
+        }
+
+        #sectionText {
+            margin-inline: 1rem;
+            margin-bottom: 2rem;
+            width: fit-content;
+            letter-spacing: -1px;
+        }
+    }
+
+    #logo {
+        width: 125px;
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+#test {
+    width: 65px;
+    height: 65px;
+}
+
+#flex {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}

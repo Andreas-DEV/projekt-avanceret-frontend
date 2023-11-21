@@ -1,9 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-
 'use client'
+import Desktop from "../components/GetInTouch/Desktop/page";
+import Mobile from "../components/GetInTouch/Mobile/page";
 import React, { FC, useState, useEffect } from 'react';
-import Mobile from "../components/WhatWeDo/Mobile/page"
-import Desktop from "../components/WhatWeDo/Desktop/page"
 
 export default function Page() {
 
@@ -22,7 +21,6 @@ export default function Page() {
         };
     }, []);
 
-
     return (
         <>
             {isMobile ? (
@@ -33,4 +31,3 @@ export default function Page() {
         </>
     )
 }
-

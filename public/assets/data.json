@@ -3,14 +3,92 @@
         "globals": {
             "logo": "/assets/logo/logo-final.png"
         },
+        "href": [
+            "/Maintainable",
+            "/WhatWeDo",
+            "/Maintainable",
+            "/GetInTouch"
+        ],
         "frontpage": [
             "/assets/front-desktop/front-what-we-do.png",
             "/assets/front-desktop/front-maintainable.png",
             "/assets/front-desktop/front-get-in-touch.png"
         ],
-        "text": 
-            {
-                "moretocome": "And yet... more to come"
+        "frontpage-mobile": [
+            "/assets/front-desktop/front-what-we-do.png",
+            "/assets/front-desktop/front-maintainable.png",
+            "/assets/front-desktop/front-get-in-touch.png"
+        ],
+        "subsides": {
+            "whatwedo": {
+                "images": {
+                    "woman": "/assets/front-desktop/front-what-we-do-link.png",
+                    "nav": "/assets/navigation/nav-1.png",
+                    "where": "/assets/navigation/nav-1-where.png",
+                    "back": "/assets/navigation/back.png",
+                    "menu": [
+                        "/assets/navigation/nav-2.png",
+                        "/assets/navigation/nav-3.png"
+                    ]
+                },
+                "title": "What We Do",
+                "subtitle": "Design is the ",
+                "subtitle2": "matter of choice",
+                "starttext": "But I must explain to you how all this mistaken idea of denouncing",
+                "text": "pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure reationally encounter consquences that are.",
+                "endtext": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure reationally encounter consquences that are.",
+                "lasttext": "because those who do not know how to pursue pleasure rationally encounter consquences that are."
+            },
+            "maintainable": {
+                "images": {
+                    "woman": "/assets/front-desktop/front-maintainable-link.png",
+                    "nav": "/assets/navigation/nav-2.png",
+                    "where": "/assets/navigation/nav-2-where.png",
+                    "back": "/assets/navigation/back.png",
+                    "menu": [
+                        "/assets/navigation/nav-1.png",
+                        "/assets/navigation/nav-3.png"
+                    ]
+                },
+                "title": "MaintainAble",
+                "subtitle": "Keeping you all ",
+                "subtitle2": "up to date",
+                "starttext": "But I must explain to you all this mistaken idea of denouncing",
+                "text": "pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of hte truth, the master-builder of human happiness.- No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who not know how to pursue pleasure reationally encounter consequences that are.",
+                "endtext": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and explound the actual teraching of the great explorer of the truth, the master-builder of human happiness"
+            },
+            "getintouch": {
+                "images": {
+                    "man": "/assets/front-desktop/front-getintouch-link.png",
+                    "nav": "/assets/navigation/nav-3.png",
+                    "where":"/assets/navigation/nav-3-where.png",
+                    "back":"/assets/navigation/back.png",
+                    "menu": [
+                        "/assets/navigation/nav-1.png",
+                        "/assets/navigation/nav-2.png"
+                    ],
+                    "module": [
+                        {
+                            "img": "/assets/front-desktop/whatwedo-small.png",
+                            "text": "lt@coolish.com"
+                        },
+                        {
+                            "img": "/assets/front-desktop/maintainable-small.png",
+                            "text": "pr@coolish.com"
+                        },
+                        {
+                            "img": "/assets/front-desktop/getintouch-small.png",
+                            "text": "mn@coolish.com"
+                        }
+                    ]
+                },
+                "title": "GetInTouch",
+                "subtitle": "There for you and ",
+                "subtitle2": "care for you"
             }
+        },
+        "text": {
+            "moretocome": "And yet... more to come"
+        }
     }
 }

@@ -2,8 +2,9 @@
 
 'use client'
 import React, { FC, useState, useEffect } from 'react';
-import Mobile from "../components/WhatWeDo/Mobile/page"
-import Desktop from "../components/WhatWeDo/Desktop/page"
+import Desktop from "../components/Maintainable/Desktop/page";
+import Mobile from "../components/Maintainable/Mobile/page";
+
 
 export default function Page() {
 
@@ -22,15 +23,15 @@ export default function Page() {
         };
     }, []);
 
-
     return (
         <>
             {isMobile ? (
                 <Mobile />
             ) : (
                 <Desktop />
-            )}
+            )
+
+            }
         </>
     )
 }
-

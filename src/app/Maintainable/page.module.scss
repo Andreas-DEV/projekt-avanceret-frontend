@@ -1,0 +1,88 @@
+// background-color: #ABCFE6
+
+#mainContainer {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    #menuContainer {
+
+        display: flex;
+        flex-direction: row;
+
+        gap: .7rem;
+
+        position: relative;
+        right: 35px;
+        top: -15px;
+
+        #box {
+            width: 63px;
+            height: 63px;
+        }
+
+        #firstbox {
+
+            #where {
+                position: absolute;
+                top: 65px;
+                left: 146.5px;
+            }
+
+        }
+
+    }
+
+    #contentContainer {
+        display: flex;
+        gap: 1rem;
+        width: 950px;
+
+        #textAlone,
+        #textMain {
+            color: #000;
+            font-size: 1rem;
+        }
+
+        #textAlone,
+        #textMain,
+        #textMiddle,
+        #textEnd {
+            width: 77ch;
+            letter-spacing: -1px;
+        }
+
+        #textMiddle,
+        #textEnd {
+            margin-block: 2rem;
+            font-size: 1rem;
+            color: #000;
+        }
+
+        #textTitle {
+            font-size: 2.4rem;
+            letter-spacing: -4px;
+        }
+
+        #matter {
+            color: #184059;
+        }
+
+        #woman {
+            width: 220px;
+            height: 516px;
+        }
+
+        #imgText {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: .5rem 1rem;
+            background-color: #000;
+            color: #fff;
+        }
+    }
+
+}

@@ -1,0 +1,75 @@
+#container {
+
+    max-width: 900px;
+    padding: 3rem 5rem;
+
+
+    #controls_container {
+        #title {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            user-select: none;
+        }
+
+    }
+
+}
+
+#content {
+
+    display: flex;
+    flex-direction: column;
+    padding-inline: 5rem;
+    margin-block: .5rem;
+
+
+
+    #label {
+        font-weight: 400;
+        user-select: none;
+    }
+
+    #input_name,
+    #input_email {
+        padding: .5rem;
+        border-radius: 3px;
+        outline: none;
+        border: 2px solid rgb(173, 173, 173);
+        margin-bottom: 2rem;
+    }
+
+    #input_textarea {
+        resize: none;
+        padding: .2rem;
+        border-radius: 3px;
+        outline: none;
+        border: 2px solid rgb(173, 173, 173);
+
+    }
+
+    #button {
+        margin-block: 1rem;
+        margin-left: 70%;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        padding: .5rem 2rem;
+        color: #fff;
+        background-color: #EA7901;
+        cursor: pointer;
+    }
+
+}
+
+#bookBtn {
+    padding: .8rem 1.8rem;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+
+    position: absolute;
+    bottom: 0;
+}
