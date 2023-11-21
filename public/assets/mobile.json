@@ -1,8 +1,10 @@
 {
     "content": {
         "globals": {
+            "finalLogo": "/assets/logo/logo-final.png",
             "logo": "/assets/logo/logo-a.png",
-            "logo2": "/assets/logo/logo-b.png"
+            "logo2": "/assets/logo/logo-b.png",
+            "frontpageTitle": "And yet.. more to come"
         },
         "whatwedo": {
             "header": {
@@ -100,6 +102,11 @@
                     }
                 ]
             }
-        }
+        },
+        "frontpage": [
+            "/assets/front-mobil/weba-2-mobil-whatwedo.png",
+            "/assets/front-mobil/weba-3-mobil-maintainable.png",
+            "/assets/front-mobil/weba-mobil.getintouch.png"
+        ]
     }
 }
