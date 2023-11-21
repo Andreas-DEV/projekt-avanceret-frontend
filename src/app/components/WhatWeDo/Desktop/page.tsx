@@ -9,76 +9,75 @@ export default function Desktop() {
     return (
         <main id={styles.mainContainer}>
 
-        <div id={styles.menuContainer}>
-
-
             <div id={styles.menuContainer}>
-                <Link href={'/'}>
-                    <img id={styles.box} src={Data.content.subsides.whatwedo.images.back} alt="" />
-                </Link>
 
-                <div id={styles.firstbox}>
-                    <Link href={'/WhatWeDo'}>
-                        <img id={styles.box} src={Data.content.subsides.whatwedo.images.nav} alt="" />
+                <div id={styles.menuContainer}>
+                    <Link href={'/'}>
+                        <img id={styles.box} src={Data.content.subsides.whatwedo.images.back} alt="" />
                     </Link>
-                    <Link href={'/WhatWeDo'}>
-                        <img id={styles.where} src={Data.content.subsides.whatwedo.images.where} alt="" />
-                    </Link>
-                </div>
-            </div>
 
-            {
-                Data.content.subsides.whatwedo.images.menu.map((element: any, index: number) => (
-
-                    <div key={index} id={styles.menuContainer}>
-                        <Link href={Data.content.href[index + 2]}>
-                            <img id={styles.box} src={Data.content.subsides.whatwedo.images.menu[index]} alt="" />
-
+                    <div id={styles.firstbox}>
+                        <Link href={'/WhatWeDo'}>
+                            <img id={styles.box} src={Data.content.subsides.whatwedo.images.nav} alt="" />
+                        </Link>
+                        <Link href={'/WhatWeDo'}>
+                            <img id={styles.where} src={Data.content.subsides.whatwedo.images.where} alt="" />
                         </Link>
                     </div>
+                </div>
 
-                ))
-            }
-        </div>
+                {
+                    Data.content.subsides.whatwedo.images.menu.map((element: any, index: number) => (
 
-        <div id={styles.contentContainer}>
+                        <div key={index} id={styles.menuContainer}>
+                            <Link href={Data.content.href[index + 2]}>
+                                <img id={styles.box} src={Data.content.subsides.whatwedo.images.menu[index]} alt="" />
 
-            <img id={styles.woman} src={Data.content.subsides.whatwedo.images.woman} alt="" />
+                            </Link>
+                        </div>
 
-            <div id={styles.textContainer}>
+                    ))
+                }
+            </div>
 
-                <h3 id={styles.textTitle}>
-                    {Data.content.subsides.whatwedo.subtitle} <span id={styles.matter}>{Data.content.subsides.whatwedo.subtitle2}</span> ...
-                </h3>
+            <div id={styles.contentContainer}>
 
-                <p id={styles.textAlone}>
-                    {Data.content.subsides.whatwedo.starttext}
-                </p>
+                <img id={styles.woman} src={Data.content.subsides.whatwedo.images.woman} alt="" />
 
-                <p id={styles.textMain}>
-                    {Data.content.subsides.whatwedo.text}
-                </p>
+                <div id={styles.textContainer}>
 
-                <p id={styles.textMiddle}>
-                    {Data.content.subsides.whatwedo.endtext}
-                </p>
+                    <h3 id={styles.textTitle}>
+                        {Data.content.subsides.whatwedo.subtitle} <span id={styles.matter}>{Data.content.subsides.whatwedo.subtitle2}</span> ...
+                    </h3>
 
-                <p id={styles.textEnd}>
-                    {Data.content.subsides.whatwedo.lasttext}
-                </p>
-                <h3 id={styles.imgText}>
+                    <p id={styles.textAlone}>
+                        {Data.content.subsides.whatwedo.starttext}
+                    </p>
 
-                    {Data.content.subsides.whatwedo.title}
+                    <p id={styles.textMain}>
+                        {Data.content.subsides.whatwedo.text}
+                    </p>
 
-                </h3>
+                    <p id={styles.textMiddle}>
+                        {Data.content.subsides.whatwedo.endtext}
+                    </p>
+
+                    <p id={styles.textEnd}>
+                        {Data.content.subsides.whatwedo.lasttext}
+                    </p>
+                    <h3 id={styles.imgText}>
+
+                        {Data.content.subsides.whatwedo.title}
+
+                    </h3>
+
+                </div>
 
             </div>
 
-        </div>
 
 
 
-
-    </main>
+        </main>
     )
 }

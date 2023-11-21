@@ -12,11 +12,11 @@ export default function PopupModule() {
 
         <Popup
 
-            trigger={<img src={Data.content.getintouch.page.contact[0].img} />}
+            trigger={<button id={styles.bookBtn}> Book a time </button>}
             modal
             nested
-            >
-            
+        >
+
             {(
 
                 <div id={styles.container}>
@@ -54,10 +54,10 @@ export default function PopupModule() {
             )}
 
         </Popup >
-      
+
 
 
 
     )
-    }
+}
 

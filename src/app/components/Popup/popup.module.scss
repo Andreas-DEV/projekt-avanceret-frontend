@@ -66,10 +66,15 @@
     padding: .8rem 1.8rem;
     outline: none;
     border: none;
-    border-radius: 20px;
+    border-radius: 2px;
     font-weight: 600;
     font-size: 0.85rem;
-
+    cursor: pointer;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
+    right: 16%;
+
+    &:hover {
+        background-color: #9f9f9f3b;
+    }
 }

@@ -3,19 +3,15 @@ import Link from "next/link";
 import Data from "../../../../../public/assets/data.json"
 import styles from "@/app/GetInTouch/page.module.scss"
 import PopupModule from "@/app/components/Popup/popup"
-import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 
 export default function Desktop() {
 
-    function Popup() {
-        <PopupModule />
-    }
 
     return (
         <main id={styles.mainContainer}>
-
-
+            <PopupModule />
+            
             <div id={styles.menuContainer}>
 
 
@@ -75,7 +71,7 @@ export default function Desktop() {
                                 <div key={index}>
 
                                     <div id={styles.personalinfo}>
-                                        <img onClick={Popup} src={Data.content.subsides.getintouch.images.module[index].img} alt="" />
+                                        <img src={Data.content.subsides.getintouch.images.module[index].img} alt="" />
                                         <p id={styles.contactinfo}>
                                             {Data.content.subsides.getintouch.images.module[index].text}
                                         </p>
@@ -85,6 +81,7 @@ export default function Desktop() {
                             ))
                         }
                     </div>
+
 
                     <h3 id={styles.imgText}>
 
@@ -96,6 +93,7 @@ export default function Desktop() {
 
 
             </div>
+                    
 
 
 

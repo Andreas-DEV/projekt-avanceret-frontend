@@ -2,6 +2,8 @@
 import Link from "next/link";
 import Data from "../../../../../public/assets/mobile.json"
 import styles from "@/app/components/GetInTouch/Mobile/page.module.scss"
+import PopupModule from "@/app/components/Popup/popup"
+import 'reactjs-popup/dist/index.css';
 
 export default function Mobile() {
     return (
@@ -9,16 +11,16 @@ export default function Mobile() {
 
             <header id={styles.headerContainer}>
 
+
                 <img src={Data.content.getintouch.header.back} alt="" />
 
+                
                 <div id={styles.menuContainer}>
 
                     <Link href={'/WhatWeDo'}>
-
                         <img id={styles.absolute} src={Data.content.getintouch.header.menu[0].nav} alt="" />
-
-
                     </Link>
+
                     <Link href={'/Maintainable'}>
                         <img id={styles.test} src={Data.content.getintouch.header.menu[1].nav} alt="" />
                     </Link>
@@ -53,18 +55,18 @@ export default function Mobile() {
                 </p>
 
                 <div id={styles.flex}>
-                {
-                    Data.content.getintouch.page.contact.map((el: any, index: number) => (
-                        <div key={index}>
-                            <div id={styles.personalinfo}>
-                                <img src={Data.content.getintouch.page.contact[index].img} alt="" />
-                                <p id={styles.contactinfo}>
-                                    {Data.content.getintouch.page.contact[index].text}
-                                </p>
+                    {
+                        Data.content.getintouch.page.contact.map((el: any, index: number) => (
+                            <div key={index}>
+                                <div id={styles.personalinfo}>
+                                    <img src={Data.content.getintouch.page.contact[index].img} alt="" />
+                                    <p id={styles.contactinfo}>
+                                        {Data.content.getintouch.page.contact[index].text}
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    ))
-                }
+                        ))
+                    }
 
                 </div>
             </section>
